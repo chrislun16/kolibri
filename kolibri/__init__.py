@@ -9,7 +9,8 @@ from __future__ import unicode_literals
 
 from .utils import env
 from .utils.version import get_version
-
+import logging
+logging.basicConfig(level=logging.WARNING,force=True)
 # Setup the environment before loading anything else from the application
 env.set_env()
 
